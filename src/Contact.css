@@ -1,0 +1,170 @@
+.contact{
+    display: flex;
+    justify-content: center;
+     margin: 80px 170px;
+     align-items: center;
+     gap: 80px;
+     flex-direction: column;
+}
+.contact-title{
+    position: relative;
+}
+.image-logo{
+    width: 100px;
+    padding: 20px 10px;
+    border-radius: 100%;
+   border: 2px solid rgb(250, 2, 118);
+    background-color: rgb(254, 253, 251);
+}
+
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 70px;
+    font-weight: 600;
+}
+.contact-title img{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+.contact-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-section-left h1{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(267deg, rgb(96, 159, 77), rgb(10, 17, 233), rgb(31, 30, 31));
+    cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-section-left p{
+    font-size: 30px;
+    font-weight: 500;
+    background: linear-gradient(267deg, rgb(69, 230, 20), rgb(10, 17, 233), rgb(199, 40, 199));
+    cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;  
+    font-size: 22px;
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-right label{
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+.contact-right input{
+    border: none;
+    width: 700px;
+    height: 78px;
+    border-radius: 4px;
+    background: #32323c;
+    padding-left: 20px;
+    color: #a0a0a0;
+    font-size: 20px;
+    font-family: outfit;
+}
+.contact-right textarea{
+    border: none;
+    width: 650px;
+
+    border-radius: 4px;
+    background: #32323c;
+    padding-left: 20px;
+    color: #a0a0a0;
+    font-size: 20px;
+    font-family: outfit;
+}
+
+.contact-sumbit{
+    border-radius: 50px;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 50px;
+    color: white;
+    margin: auto;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid palegreen;
+    background: linear-gradient(267deg, rgb(201, 226, 101), rgb(211, 10, 233), rgb(12, 167, 223));
+}
+.contact-sumbit:hover{
+    background: linear-gradient(267deg, rgb(174, 178, 157), rgb(10, 233, 40), rgb(9, 5, 239));  
+}@media(max-width:768px){
+    .contact{
+        margin: 50px 60px;
+        gap: 50px;
+        align-items: start;
+    }
+    .contact-title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 60px;
+    }
+    .contact-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-section-left h1{
+        font-size: 54px;
+    }
+    .contact-detail p{
+        font-size: 17px;
+    }
+    .contact-right label{
+     
+        font-size: 16px;
+        color: white;
+    }
+    .contact-right input{
+        border: none;
+        width: 500px;
+        height: 56px;
+        border-radius: 4px;
+        background: #32323c;
+        padding-left: 10px;
+        color: #a0a0a0;
+        font-size: 15px;
+        font-family: outfit;
+    }
+    .contact-right textarea{
+        border: none;
+        width: 450px;
+    
+        border-radius: 4px;
+        background: #32323c;
+        padding-left: 10px;
+        color: #a0a0a0;
+        font-size: 15px;
+        font-family: outfit;
+    }
+}

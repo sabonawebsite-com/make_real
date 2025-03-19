@@ -1,0 +1,112 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 170px;
+  gap: 80px;
+  font-size: 26px;
+  color: rgb(217, 229, 229);
+}
+.services-title {
+  position: relative;
+}
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.services-title img {
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+.service-format {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px;
+  border-radius: 10px;
+  border: 2px solid palevioletred;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.service-format h3 {
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(
+    267deg,
+    rgb(6, 46, 249),
+    rgb(233, 10, 210),
+    rgb(221, 9, 9)
+  );
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.service-format h2 {
+  font-size: 30px;
+  font-weight: 500;
+  background: linear-gradient(
+    267deg,
+    rgb(243, 27, 7),
+    rgb(233, 10, 210),
+    rgb(9, 221, 30)
+  );
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.service-format h3 {
+  font-size: 40px;
+  font-weight: 500;
+  width: 100%;
+}
+.service-format:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  background: linear-gradient(
+    267deg,
+    rgb(94, 11, 11),
+    rgb(111, 12, 12),
+    rgb(110, 15, 37)
+  );
+}
+.services-read-more {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .services {
+    align-items: start;
+
+    margin: 40px 70px;
+    gap: 30px;
+  }
+  .services-title h1 {
+    padding: 0px;
+    font-size: 50px;
+  }
+  .service-format {
+    gap: 20px;
+    padding: 20px;
+  }
+  .services-container{
+    display: grid;
+        grid-template-columns: 1fr;
+  }
+}

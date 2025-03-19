@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  margin: 0;
+}
+body{
+  background: linear-gradient(260deg,rgb(237, 7, 133),black,rgb(13, 27, 117));
+  /* background: rgb(23, 23, 23); */
+  color: white;
+  height: 100vh;
+  font-family: 'outfit';
+}
